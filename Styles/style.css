@@ -554,6 +554,37 @@ footer{
     margin-top: 10px;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+  .fade img{
+    width: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 350px;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
@@ -665,7 +696,12 @@ footer{
     .project-box{
         width: 80%;
     }
-
+    .fade img{
+        width: 150px;
+        border-radius: 12px;
+        object-fit: cover;
+        height: 150px;
+      }
     .about-info {
         padding-block: 30px;
        }
@@ -696,7 +732,23 @@ footer{
     }
     .input-field{
         width: 100%;
-    }
+  }
+    .fade img{
+        width: 150px;
+        border-radius: 12px;
+        object-fit: cover;
+        height: 150px;
+      }
+}
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .fade img{
+        width: 150px ;
+        border-radius: 12px;
+        object-fit: cover;
+        height: 150px ;
+      }
     .about-info{
     padding-block: 30px;
     }
