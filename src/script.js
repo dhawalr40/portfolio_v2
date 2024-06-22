@@ -9,6 +9,21 @@ function myMenuFunction(){
     }
   }
 
+  // -------------get project url -----------
+  function getProjectUrl(n){
+    switch(n){
+      case 1: window.open("https://github.com/dhawalr40/blog");
+              break;
+      case 2: window.open("https://github.com/dhawalr40/RSA-encryption");
+              break;
+      case 3: window.open("https://github.com/dhawalr40/clothing-web-app-react");
+              break;
+      case 4: window.open("https://github.com/dhawalr40/portfolio");
+              break;
+      default: window.open("https://github.com/dhawalr40/");
+    }
+  }
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
   window.onscroll = function() {headerShadow()};
 
