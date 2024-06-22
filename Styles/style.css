@@ -568,7 +568,7 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .nav-button{
         display: none;
     }
@@ -666,6 +666,16 @@ footer{
         width: 80%;
     }
 
+    .about-info {
+        padding-block: 30px;
+       }
+       .about-btn button {
+           position: unset;
+       }
+       .download-btn {
+           margin-right: 0rem;
+       }
+
 }
 
 .download-btn {
@@ -686,5 +696,14 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+    .about-info{
+    padding-block: 30px;
+    }
+    .about-btn button {
+        position: unset;
+    }
+    .download-btn {
+        margin-right: 0rem;
     }
 }
