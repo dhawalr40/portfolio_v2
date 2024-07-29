@@ -20,6 +20,8 @@ function myMenuFunction(){
               break;
       case 4: window.open("https://github.com/dhawalr40/portfolio");
               break;
+      case 5: window.open("https://github.com/dhawalr40/crop-sticker-app")
+              break;
       default: window.open("https://github.com/dhawalr40/");
     }
   }
